@@ -1,5 +1,3 @@
-SELECT *
-FROM salaries;
 -- where cases
 SELECT 
 	year
@@ -36,9 +34,7 @@ WHERE
 	AND job_title='ML Engineer'
 ORDER BY salary_in_usd DESC;
 
--- Назвати країну (comp_location),
---в якій зафіксована найменша з/п спеціаліста
---в сфері Data Scientist в 2023 році
+-- Назвати країну (comp_location),в якій зафіксована найменша з/п спеціаліста в сфері Data Scientist в 2023 році
 SELECT 
 	emp_location
 	, job_title
@@ -50,8 +46,7 @@ WHERE
 ORDER BY salary_in_usd ASC
 LIMIT 1;
 
--- Вивести з/п українців (код країни UA), 
---додати сортування за зростанням з/п
+-- Вивести з/п українців (код країни UA), додати сортування за зростанням з/п
 SELECT 
 	emp_location
 	, job_title
@@ -61,8 +56,7 @@ WHERE
 	emp_location='UA'
 ORDER BY salary_in_usd ASC;
 
--- Вивести топ 5 з/п серед усіх спеціалістів, 
---які працюють повністю віддалено (remote_ratio = 100)
+-- Вивести топ 5 з/п серед усіх спеціалістів, які працюють повністю віддалено (remote_ratio = 100)
 SELECT 
 	job_title
 	, remote_ratio
@@ -72,10 +66,7 @@ WHERE
 	remote_ratio = 100
 ORDER BY salary_in_usd DESC
 LIMIT 5;
--- Згенерувати .csv файл з таблицею даних всіх
---спеціалістів, які в 2023 році мали з/п більшу
--- за $100,000 і працювали в компаніях середнього 
---розміру (comp_size = 'M')
+-- Згенерувати .csv файл з таблицею даних всіх спеціалістів, які в 2023 році мали з/п більшу за $100,000 і працювали в компаніях середнього розміру (comp_size = 'M')
 SELECT 
 	year
 	, job_title
