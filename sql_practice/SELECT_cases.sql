@@ -48,3 +48,22 @@ SELECT
 		ELSE 'Others' END	AS full_level 
 FROM salaries
 LIMIT 10;
+
+--вивести унікальні значення для колонки
+SELECT DISTINCT company_location
+FROM salaries;
+
+--вивести кількість унікальних значеннь для колонки
+SELECT COUNT(DISTINCT company_location)
+FROM salaries;
+
+SELECT 
+	ROUND(AVG(salary_in_usd),2)			AS	salary_avg
+	, MAX(salary_in_usd)		AS	salary_max
+	, MIN(salary_in_usd)		AS	salary_min
+FROM salaries
+WHERE year=2023;
+
+--вивести унікальні значення для колонки
+SELECT ROUND(DISTINCT (remote_ratio/100.0),2)	AS remote_frac
+FROM salaries;
