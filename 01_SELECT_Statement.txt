@@ -1,4 +1,0 @@
--- Example: Get all customers' first names and last names
-SELECT FirstName, LastName 
-FROM Customers
-LIMIT 3
