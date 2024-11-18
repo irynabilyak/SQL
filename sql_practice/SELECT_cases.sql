@@ -67,3 +67,7 @@ WHERE year=2023;
 --вивести унікальні значення для колонки
 SELECT ROUND(DISTINCT (remote_ratio/100.0),2)	AS remote_frac
 FROM salaries;
+
+--Дослідити всі колонки на наявність відсутніх значень
+SELECT COUNT(*) - COUNT(salary_in_usd)
+FROM salaries;
