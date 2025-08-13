@@ -1,4 +1,4 @@
---1581. Customer Who Visited but Did Not Make Any Transactions
+/*1581. Customer Who Visited but Did Not Make Any Transactions
 Table: Visits
 +-------------+---------+
 | Column Name | Type    |
@@ -22,7 +22,7 @@ This table contains information about the transactions made during the visit_id.
  
 Write a solution to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits.
 Return the result table sorted in any order.
-The result format is in the following example.--
+The result format is in the following example.*/
 
 SELECT v.customer_id AS customer_id, COUNT(v.visit_id) AS count_no_trans 
 FROM Visits v
