@@ -1,4 +1,4 @@
-Table: Employees
+/*Table: Employees
 
 +-------------+---------+
 | Column Name | Type    |
@@ -29,7 +29,7 @@ Write a solution to report the name and bonus amount of each employee with a bon
 
 Return the result table in any order.
 
-The result format is in the following example.
+The result format is in the following example.*/
 
  SELECT e.name 
 , b.bonus 
