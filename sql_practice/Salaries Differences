@@ -1,12 +1,11 @@
-/*Salaries Differences 
-Calculates the difference between the highest salaries in the marketing and engineering departments. 
+--Salaries Differences Calculates the difference between the highest salaries in the marketing and engineering departments. 
 Output just the absolute difference in salaries. 
 Tables
 db_employee 
 db_dept 
 
 db_employee   department_id: bigint first_name: text id: bigint last_name: text salary: bigint db_dept
-db_dept      department: text id: bigint.*/
+db_dept      department: text id: bigint.
 
 SELECT 
     ABS(
